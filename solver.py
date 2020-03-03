@@ -1,3 +1,4 @@
+# Creating the board with hard coded numbers
 board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -10,6 +11,7 @@ board = [
     [0,4,9,2,0,6,0,0,7]
 ]
 
+# Function for solving board
 def solve(bo):
     find = find_empty(bo)
     if not find:
@@ -49,6 +51,7 @@ def valid(bo, num, pos):
                 return False
     return True
 
+# Print the board with the algorythm 
 def print_board(bo):
     for i in range(len(bo)): #Loop the row
         if i % 3 == 0 and i != 0:
